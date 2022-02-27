@@ -17,6 +17,12 @@ img {
   width: 96%;
 }
 
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 90%;
+  }
+}
+
 /***********************    Header   ***************************/
 .header {
   padding: 20px 0;
@@ -104,23 +110,52 @@ img {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 950px) {
+  .main-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 
 .main-text__title {
+  max-width: 500px;
   font-size: 41px;
   color: #333333;
   font-weight: 400;
   line-height: 55px;
-  margin: 40px 0;
+  margin: 60px 0 30px 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .main-text__title {
+    font-size: 24px;
+    margin: 40px 0 10px 0;
+    line-height: 1.4;
+  }
 }
 
 .main-text__subtitle {
   line-height: 65px;
   font-size: 20px;
   color: #333333;
+}
+
+@media only screen and (max-width: 640px) {
+  .main-text__subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+.main-list {
+  margin-top: 40px;
 }
 
 .main-list__item {
@@ -130,6 +165,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .main-list__item {
+    margin-bottom: 12px;
+  }
 }
 
 .main-list__image {
@@ -137,6 +179,30 @@ img {
   height: 40px;
   border: 2px solid #ffd200;
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px;
+}
+
+.main-list__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 640px) {
+  .main-list__text {
+    font-size: 12px;
+    max-width: 200px;
+  }
 }
 
 .main-image {
