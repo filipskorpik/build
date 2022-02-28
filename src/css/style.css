@@ -1,9 +1,26 @@
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 400;
 }
 
 img {
@@ -75,6 +92,8 @@ img {
   background-color: #ffd200;
   border: none;
   color: #333333;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
   margin-left: 30px;
   padding: 20px 47px;
   font-size: 13px;
@@ -89,6 +108,7 @@ img {
 .header__phone {
   color: #333333;
   font-size: 20px;
+  font-family: 'Museo Sans Cyrl', sans-serif;
   font-weight: 700;
   text-decoration: none;
   display: block;
@@ -131,6 +151,8 @@ img {
   font-weight: 400;
   line-height: 55px;
   margin: 60px 0 30px 0;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 640px) {
@@ -145,6 +167,8 @@ img {
   line-height: 65px;
   font-size: 20px;
   color: #333333;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 640px) {
