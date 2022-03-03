@@ -257,11 +257,41 @@ img {
   padding: 90px 0;
   background: url(../images/offer-bcg.jpg) no-repeat;
   background-position: center right;
+  position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+  .offer {
+    background: 0;
+  }
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 }
 
 .offer-block {
   width: 50%;
   padding-right: 90px;
+  position: relative;
+}
+
+@media only screen and (max-width: 1020px) {
+  .offer-block {
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .offer-block {
+    width: 100%;
+  }
 }
 
 .offer-title {
@@ -289,8 +319,50 @@ img {
   margin-right: 2%;
 }
 
+@media only screen and (max-width: 1020px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 .offer__button {
   width: 100%;
   min-height: 70px;
+}
+
+.call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 550px) {
+  .call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.call p {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+  .call-right {
+    margin-top: 10px;
+  }
+}
+
+.call-right__phone {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
