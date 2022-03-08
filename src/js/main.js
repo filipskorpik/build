@@ -24,4 +24,15 @@ $(document).ready(function(){
         modal.removeClass('modal_active');
     });
 
+    $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows-left'),
+        nextArrow: $('.arrows-right'),
+    });
+        
+
+
+
+
 });

@@ -78,7 +78,7 @@ img
         margin-top: 12px
 
 
-/***********************    Main-block   ***************************/
+/***********************    Main-block ***************************/
 .main
     background-color: $bcgcolor
     &-block
@@ -146,7 +146,7 @@ img
         padding: 50px 0
        
 
-/***********************    Offer  ***************************/
+/***********************  Offer  ***************************/
 .offer
     padding: 90px 0
     background: url(../images/offer-bcg.jpg) no-repeat
@@ -211,6 +211,32 @@ img
         &__phone
             +bold
             color: $accent
+
+    
+/*********************** Portfolio ***************************/
+.portfolio
+    padding: 100px 0
+    background: $bcgcolor url('') left repeat-y
+    background-size: 50%
+    &-title
+        +sectionTitle
+        color: $accent
+        margin-bottom: 100px
+    &__arrows
+        max-width: 120px
+        display: flex
+
+.arrows-left, arrows-right
+    cursor: pointer
+    
+    
+    
+    
+    
+    
+    
+/***********************    Modal ***************************/
+
 .modal
     position: fixed
     left: 0

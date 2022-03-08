@@ -130,7 +130,7 @@ img {
   margin-top: 12px;
 }
 
-/***********************    Main-block   ***************************/
+/***********************    Main-block ***************************/
 .main {
   background-color: #f5f5f5;
 }
@@ -252,7 +252,7 @@ img {
   padding: 50px 0;
 }
 
-/***********************    Offer  ***************************/
+/***********************  Offer  ***************************/
 .offer {
   padding: 90px 0;
   background: url(../images/offer-bcg.jpg) no-repeat;
@@ -367,6 +367,35 @@ img {
   color: #333333;
 }
 
+/*********************** Portfolio ***************************/
+.portfolio {
+  padding: 100px 0;
+  background: #f5f5f5 url("") left repeat-y;
+  background-size: 50%;
+}
+
+.portfolio-title {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #333333;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arrows-left, arrows-right {
+  cursor: pointer;
+}
+
+/***********************    Modal ***************************/
 .modal {
   position: fixed;
   left: 0;
