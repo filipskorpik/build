@@ -225,16 +225,51 @@ img
     &__arrows
         max-width: 120px
         display: flex
-
-.arrows-left, arrows-right
+        justify-content: space-between
+        margin: auto
+        margin-top: 70px
+.slider
+    &__image
+        margin: auto
+.arrows-left, .arrows-right
     cursor: pointer
     
     
+/*********************** Price ***************************/
+.price
+    padding: 100px 0
+    &__title
+        +sectionTitle
+    &__subtitle
+        display: inline-block
+        margin-bottom: 60px
+    &__card
+
+
+.cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap 
+.card
+    text-align: center
+    border: 1px solid $cardBorder
+    &__text
+        padding-top: 40px
+    &__title
+        margin-top: 0
+    &__
+        
     
     
     
-    
-    
+
+
+
+
+
+
+
+
 /***********************    Modal ***************************/
 
 .modal

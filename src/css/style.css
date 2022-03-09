@@ -389,10 +389,61 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 70px;
 }
 
-.arrows-left, arrows-right {
+.slider__image {
+  margin: auto;
+}
+
+.arrows-left, .arrows-right {
   cursor: pointer;
+}
+
+/*********************** Price ***************************/
+.price {
+  padding: 100px 0;
+}
+
+.price__title {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.price__subtitle {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.card__text {
+  padding-top: 40px;
+}
+
+.card__title {
+  margin-top: 0;
 }
 
 /***********************    Modal ***************************/

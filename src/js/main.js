@@ -1,15 +1,3 @@
-/* var button = document.querySelector('#button');
-var modal = document.querySelector('.modal');
-var close = document.querySelector('#close');
-
-button.addEventListener('click', function(){
-    modal.classList.add('modal_active')
-});
-
-close.addEventListener('click', function(){
-    modal.classList.remove('modal_active')
-});
- */
 
 $(document).ready(function(){
     var button = $('#button');
@@ -29,6 +17,23 @@ $(document).ready(function(){
         slidesToScroll: 1,
         prevArrow: $('.arrows-left'),
         nextArrow: $('.arrows-right'),
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                
+              }
+            },
+         
+          ]
     });
         
 
