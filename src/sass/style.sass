@@ -327,6 +327,19 @@ img
     
 .icon
     text-align: center
+    position: relative
+    &:last-child
+        ::after
+            display: none
+    ::after
+        content: ''
+        background-image: url('../images/arrowUpRight.png')
+        position: absolute
+        top: -11px
+        left: 167px
+        width: 72px
+        height: 25px
+
     &__img
         border: 3px solid #ffd200
         border-radius: 50px
@@ -345,7 +358,17 @@ img
         max-width: 160px
         display: inline-block
 
-    
+/***********************    Notice ***************************/
+.notice
+    background: $secondary-color
+    &-text
+        margin: auto
+        text-align: center
+        font-size: 32px
+        line-height: 50px
+        padding: 100px 110px
+
+   
 
 
 

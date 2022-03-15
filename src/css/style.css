@@ -572,6 +572,21 @@ img {
 
 .icon {
   text-align: center;
+  position: relative;
+}
+
+.icon:last-child ::after {
+  display: none;
+}
+
+.icon ::after {
+  content: '';
+  background-image: url("../images/arrowUpRight.png");
+  position: absolute;
+  top: -11px;
+  left: 167px;
+  width: 72px;
+  height: 25px;
 }
 
 .icon__img {
@@ -601,6 +616,19 @@ img {
 .icon__text {
   max-width: 160px;
   display: inline-block;
+}
+
+/***********************    Notice ***************************/
+.notice {
+  background: #ffc000;
+}
+
+.notice-text {
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+  line-height: 50px;
+  padding: 100px 110px;
 }
 
 /***********************    Modal ***************************/
