@@ -631,6 +631,66 @@ img {
   padding: 100px 110px;
 }
 
+.notice-block {
+  margin-bottom: 100px;
+}
+
+/***********************    benefit ***************************/
+.benefits-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefit {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.benefit-text {
+  padding: 27px 0 0 27px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/***********************    Document ***************************/
+.documents-title {
+  margin: 140px 0 100px 0;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.documents-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.document-text {
+  line-height: 24px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+
 /***********************    Modal ***************************/
 .modal {
   position: fixed;
