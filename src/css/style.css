@@ -699,8 +699,9 @@ img {
 .brief {
   background-image: url("../images/brief-color-bg.png"), url("../images/brief.jpg");
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: no-repeat, no-repeat;
+  padding: 100px 0;
 }
 
 .brief-block {
@@ -717,6 +718,22 @@ img {
 .brief__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brief__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brief__button {
+  width: 100%;
+  max-width: 370px;
+  display: block;
+  height: 70px;
+  margin: 15px auto 30px auto;
 }
 
 .interview {
@@ -769,6 +786,20 @@ img {
 .interview-list__text {
   max-width: 400px;
   font-size: 18px;
+}
+
+.form__title {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+.form__subtitle {
+  font-size: 16px;
+  margin-bottom: 50px;
+  display: block;
 }
 
 /***********************    Modal   ***************************/
