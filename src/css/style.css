@@ -704,10 +704,28 @@ img {
   padding: 100px 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .brief {
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+    padding: 20px 0;
+  }
+}
+
 .brief-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .brief-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .brief__interview {
@@ -720,6 +738,12 @@ img {
       flex-basis: 50%;
   padding-left: 200px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .brief__form {
+    padding-left: 30px;
+  }
 }
 
 .brief__input {
@@ -740,18 +764,41 @@ img {
   padding-right: 70px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .interview {
+    padding-right: 30px;
+    padding-left: 5%;
+  }
+}
+
 .interview__title {
   font-family: 'Museo Sans Cyrl', sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 33px;
+  text-align: center;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .interview__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 
 .interview__subtitle {
   font-size: 16px;
   margin-bottom: 100px;
+  text-align: center;
   display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .interview__subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
 }
 
 .interview-list {
@@ -783,9 +830,22 @@ img {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+}
+
 .interview-list__text {
   max-width: 400px;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
 }
 
 .form__title {
@@ -796,10 +856,24 @@ img {
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .form__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
 .form__subtitle {
   font-size: 16px;
   margin-bottom: 50px;
   display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form__subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
 }
 
 /***********************    Modal   ***************************/
