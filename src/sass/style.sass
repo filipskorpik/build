@@ -329,9 +329,9 @@ img
     text-align: center
     position: relative
     &:last-child
-        ::after
+        &::after
             display: none
-    ::after
+    &::after
         content: ''
         background-image: url('../images/arrowUpRight.png')
         position: absolute
@@ -339,6 +339,8 @@ img
         left: 167px
         width: 72px
         height: 25px
+        
+
 
     &__img
         border: 3px solid #ffd200
