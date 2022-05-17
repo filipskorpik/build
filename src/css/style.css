@@ -310,9 +310,13 @@ img {
   margin-bottom: 30px;
 }
 
+.offer__form {
+  margin-right: 2%;
+}
+
 .offer__input {
   margin-bottom: 30px;
-  width: 48.5%;
+  width: 90%;
 }
 
 .offer__input:first-child {
@@ -321,13 +325,13 @@ img {
 
 @media only screen and (max-width: 1020px) {
   .offer__input {
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
   }
 }
 
 .offer__button {
-  width: 100%;
+  width: 96%;
   min-height: 70px;
 }
 
@@ -355,9 +359,24 @@ img {
   font-size: 15px;
 }
 
+.call-left {
+  max-width: 35%;
+}
+
+@media only screen and (max-width: 550px) {
+  .call-left {
+    max-width: 100%;
+  }
+}
+
+.call-right {
+  padding-right: 2%;
+  max-width: 35%;
+}
+
 @media only screen and (max-width: 550px) {
   .call-right {
-    margin-top: 10px;
+    display: none;
   }
 }
 
@@ -575,11 +594,11 @@ img {
   position: relative;
 }
 
-.icon:last-child ::after {
+.icon:last-child::after {
   display: none;
 }
 
-.icon ::after {
+.icon::after {
   content: '';
   background-image: url("../images/arrowUpRight.png");
   position: absolute;
