@@ -219,6 +219,7 @@ img {
 
 .main-list__image {
   width: 40px;
+  min-width: 40px;
   height: 40px;
   border: 2px solid #ffd200;
   border-radius: 50px;
@@ -942,6 +943,7 @@ img {
 
 .interview-list__counter {
   width: 35px;
+  min-width: 35px;
   height: 35px;
   border: 2px solid #000;
   display: inline-block;
