@@ -248,6 +248,8 @@ img
 /*********************** Price ***************************/
 .price
     padding: 100px 0
+    @media only screen and(max-width:768px)
+        padding: 30px 0
     &__title
         +sectionTitle
         padding: 0 30%
@@ -324,6 +326,8 @@ img
 /*********************** Price ***************************/  
 .steps
     margin-bottom: 100px
+    @media only screen and(max-width:768px)
+        margin-bottom: 30px
     &__title
         +sectionTitle
         margin-bottom: 60px
@@ -331,10 +335,14 @@ img
         +sectionSubtitle
         margin-bottom: 60px
 
+
 .icons
     display: flex
     justify-content: space-between
-    
+    @media only screen and(max-width:768px)
+        flex-direction: column
+        display: block
+        margin-bottom: 20px
 .icon
     text-align: center
     position: relative
@@ -349,9 +357,10 @@ img
         left: 167px
         width: 72px
         height: 25px
-        
-
-
+        @media only screen and(max-width:950px)
+            left: 125px
+        @media only screen and(max-width:768px)
+            display: none
     &__img
         border: 3px solid #ffd200
         border-radius: 50px
@@ -362,7 +371,7 @@ img
         display: flex
         justify-content: center
         align-items: center
-        margin-bottom: 30px
+        margin: 40px auto 20px auto
         img
             width: 35px
             height: 35px
@@ -379,18 +388,28 @@ img
         font-size: 32px
         line-height: 50px
         padding: 100px 110px
+        @media only screen and(max-width:768px)
+            font-size: 20px
+            padding: 20px 3%
     &-block
         margin-bottom: 100px
+        @media only screen and(max-width:768px)
+            margin-bottom: 30px
 
 /***********************    benefit ***************************/
 .benefits-block
     display: flex
     justify-content: space-between
+    @media only screen and(max-width:768px)
+        flex-direction: column
+        align-items: center
 .benefit
     background-color: $benefitBcg
     display: flex
     justify-content: space-between
     flex-direction: column
+    @media only screen and(max-width:768px)
+        margin-bottom: 20px
     
     &-text
         padding: 27px 0 0 27px
@@ -403,9 +422,14 @@ img
     &-title
         margin: 140px 0 100px 0
         +sectionTitle
+        @media only screen and(max-width:768px)
+            margin: 60px 0 50px 0
     &-block
         display: flex
         justify-content: space-around
+        @media only screen and(max-width:768px)
+            align-items: center
+            flex-direction: column
 .document
     &-text
         line-height: 24px
@@ -413,6 +437,9 @@ img
         text-align: center
         display: block
         margin-top: 40px
+        @media only screen and(max-width:768px)
+            margin-top: 10px
+            margin-bottom: 40px
 
 
 /***********************    Brief   ***************************/
@@ -440,7 +467,7 @@ img
         @media only screen and(max-width:1200px)
             padding-left: 30px
     &__input
-        width: 100% 
+        width: 83% 
         max-width: 370px
         margin-bottom: 15px
     &__button
@@ -456,6 +483,8 @@ img
     padding-right: 70px
     @media only screen and(max-width:1200px)
         padding-right: 30px
+    @media only screen and(max-width:768px)
+        padding-right: 0
         padding-left: 5%
     &__title
         +bold
@@ -477,6 +506,8 @@ img
     &-list
         list-style-type: none
         padding: 0
+        @media only screen and(max-width:768px)
+            padding-left: 8%
         &__item
             display: flex
             align-items: center
@@ -510,6 +541,8 @@ img
         @media only screen and(max-width:1200px)
             font-size: 18px
             margin-bottom: 40px
+        @media only screen and(max-width:768px)
+            margin: 70px 0 40px 0px
     &__subtitle
         font-size: 16px
         margin-bottom: 50px

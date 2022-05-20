@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
     
+  // Animace
     new WOW().init();
 
   
@@ -10,7 +11,7 @@ $(document).ready(function(){
   
   
   
-  
+  // Modální okno
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
@@ -23,6 +24,9 @@ $(document).ready(function(){
         modal.removeClass('modal_active');
     });
 
+
+    
+    // Napojení slideru
     $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
